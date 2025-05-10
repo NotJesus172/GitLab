@@ -233,7 +233,7 @@ external_url 'https://gitlab.silvera.win'
 ###! different machine.
 ###! **Add the IP address for your reverse proxy to the list, otherwise users
 ###!   will appear signed in from that address.**
- gitlab_rails['trusted_proxies'] = [172.20.200.60]
+# gitlab_rails['trusted_proxies'] = [172.20.200.60]
 
 ### Content Security Policy
 ####! Customize if you want to enable the Content-Security-Policy header, which
