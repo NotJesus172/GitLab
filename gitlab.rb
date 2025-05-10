@@ -97,20 +97,20 @@ external_url 'https://gitlab.silvera.win'
 ###! Docs: https://docs.gitlab.com/omnibus/settings/smtp.html
 ###! **Use smtp instead of sendmail/postfix.**
 
-# gitlab_rails['smtp_enable'] = true
-# gitlab_rails['smtp_address'] = "smtp.server"
-# gitlab_rails['smtp_port'] = 465
-# gitlab_rails['smtp_user_name'] = "smtp user"
-# gitlab_rails['smtp_password'] = "smtp password"
-# gitlab_rails['smtp_domain'] = "example.com"
-# gitlab_rails['smtp_authentication'] = "login"
-# gitlab_rails['smtp_enable_starttls_auto'] = true
-# gitlab_rails['smtp_tls'] = false
+ gitlab_rails['smtp_enable'] = true
+ gitlab_rails['smtp_address'] = "pro.turbo-smtp.com"
+ gitlab_rails['smtp_port'] = 465
+ gitlab_rails['smtp_user_name'] = "naftalisilvera@gmail.com"
+ gitlab_rails['smtp_password'] = "zizdeq-wojkE7-hikhoq"
+ gitlab_rails['smtp_domain'] = "silvera.win"
+ gitlab_rails['smtp_authentication'] = "login"
+ gitlab_rails['smtp_enable_starttls_auto'] = true
+# gitlab_rails['smtp_tls'] = true
 # gitlab_rails['smtp_pool'] = false
 
 ###! **Can be: 'none', 'peer', 'client_once', 'fail_if_no_peer_cert'**
 ###! Docs: http://api.rubyonrails.org/classes/ActionMailer/Base.html
-# gitlab_rails['smtp_openssl_verify_mode'] = 'none'
+ gitlab_rails['smtp_openssl_verify_mode'] = 'none'
 
 # gitlab_rails['smtp_ca_path'] = "/etc/ssl/certs"
 # gitlab_rails['smtp_ca_file'] = "/etc/ssl/certs/ca-certificates.crt"
@@ -145,7 +145,7 @@ external_url 'https://gitlab.silvera.win'
 ##! `8`  for Light Green
 ##! `9`  for Red
 ##! `10` for Light Red
-# gitlab_rails['gitlab_default_theme'] = 2
+ gitlab_rails['gitlab_default_theme'] = 2
 
 ### Custom html header tags
 ###! See https://docs.gitlab.com/ee/administration/custom_html_header_tags.html for more
@@ -233,7 +233,7 @@ external_url 'https://gitlab.silvera.win'
 ###! different machine.
 ###! **Add the IP address for your reverse proxy to the list, otherwise users
 ###!   will appear signed in from that address.**
-# gitlab_rails['trusted_proxies'] = []
+# gitlab_rails['trusted_proxies'] = [172.20.200.60]
 
 ### Content Security Policy
 ####! Customize if you want to enable the Content-Security-Policy header, which
